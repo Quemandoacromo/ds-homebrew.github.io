@@ -98,11 +98,51 @@ If the test shows any other results, your SD card may be corrupted or damaged an
 
 ::: tip
 
-If TWiLight Menu++ fails to start after following this method, please follow the Windows method instead, by either rebooting to Windows or running a Windows Virtual Machine
+This section formats the SD card to the specifications by the SD Card Association. This can fix many issues that may occur with running homebrew applications.
 
 :::
 
-### Section I - Formatting your SD card
+::: danger
+
+Any 64GB or larger SD cards will be formatted to `exFAT` in this process. You _must_ follow both Sections I & II to re-format to `FAT32`.
+
+:::
+
+### Section I - Formatting your SD card with sdFormatLinux
+1. Make sure your SD card is **not** inserted into your Linux machine
+1. Download and extract the latest version of [sdFormatLinux](https://github.com/profi200/sdFormatLinux/releases/download/v0.2.0/sdFormatLinux_v0.2.0.7z) to your computer
+1. Launch the Linux Terminal
+1. Type `watch "lsblk"`
+1. Insert your SD card into your Linux machine
+1. Observe the output. It should match something like this:
+```
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+mmcblk0     179:0    0   3,8G  0 disk
+└─mmcblk0p1 179:1    0   3,7G  0 part /run/media/user/FFFF-FFFF
+```
+1. Take note of the device name. In our example above, it was `mmcblk0`
+    - If `RO` is set to 1, make sure the lock switch is not slid down
+    - Make sure that you're targetting the **device**, `mmcblk0`, not the partition, `mmcblk0p1`
+1. Hit CTRL + C to exit the menu
+1. Navigate to where you have extracted sdFormatLinux
+1. Run `sudo ./sdFormatLinux -e trim /dev/(device name from above)` to format your SD card
+
+::: tip
+
+If you get an error message stating: `Error: Device is mounted`, you will need to run `sudo umount /dev/(partition name from above)` in order to complete the above step.
+
+:::
+
+### Section II - Formatting your SD card with mkdosfs
+
+This section formats SD cards which are 64GB or larger to FAT32.
+
+::: tip
+
+If your SD card is 32GB or less in capacity, skip to Section III.
+
+:::
+
 1. Make sure your SD card is **not** inserted into your Linux machine
 1. Launch the Linux Terminal
 1. Type `watch "lsblk"`
@@ -113,25 +153,14 @@ NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 mmcblk0     179:0    0   3,8G  0 disk
 └─mmcblk0p1 179:1    0   3,7G  0 part /run/media/user/FFFF-FFFF
 ```
-1. Take note of the device name. In our example above, it was `mmcblk0p1`
+1. Take note of the device partition name. In our example above, it was `mmcblk0p1`
     - If `RO` is set to 1, make sure the lock switch is not slid down
-    - Make sure you're targetting the **partition**, `mmcblk0p1` not `mmcblk0`
+    - Make sure you're targetting the **partition**, `mmcblk0p1`, not the device, `mmcblk0`
 1. Hit CTRL + C to exit the menu
-1. Follow the instructions relevant to your SD card's capacity:
-    - 2GB or lower: `sudo mkdosfs /dev/(device name from above) -s 64 -F 16` 
-      - This creates a single FAT16 partition with 32 KB cluster size on the SD card
-    - 4GB or higher: `sudo mkdosfs /dev/(device name from above) -s 64 -F 32` 
-      - This creates a single FAT32 partition with 32 KB cluster size on the SD card
+1. Run `sudo mkdosfs /dev/(partition name from above) -s 64 -F 32` to format your SD card to FAT32
 
-::: tip
-
-If you get an error message saying: `mkdosfs: /dev/(device name) contains a mounted file system`, you will need to `sudo umount /dev/(device name from above)` in order to complete the above step.
-You should then reinsert the SD card **or** recreate the MOUNTPOINT (`sudo mkdir -p /run/media/user/FFFF-FFFF && sudo mount /dev/(device name) /run/media/user/FFFF-FFFF`) to continue.
-
-:::
-
-### Section II - Using F3
-1. Download and extract [the F3 archive](https://github.com/AltraMayor/f3/archive/v7.2.zip) anywhere on your computer.
+### Section III - Using F3
+1. Download and extract [the F3 archive](https://github.com/AltraMayor/f3/archive/v9.0.zip) anywhere on your computer.
 1. Launch the terminal in the F3 directory
 1. Run `make` to compile F3
 1. With your SD card inserted and mounted, run `./f3write <your sd card mount point>`
