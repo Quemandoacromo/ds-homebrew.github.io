@@ -6,7 +6,7 @@
 - [Launching the Exploit (stylehax)](launching-the-browser-exploit.html)
 - [Launching the Exploit (Flipnote Lenny)](launching-the-flipnote-exploit.html)
 - [Dumping NAND](dumping-nand.html)
-- [Choosing a Menu](choosing-a-menu.html)
+- [Installing a New Menu]installing-a-new-menu.html)
 - [Installing Unlaunch](installing-unlaunch.html)
 
 ## Add-on sections
