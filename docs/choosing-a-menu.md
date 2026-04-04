@@ -18,7 +18,9 @@ Install this if you're looking for an experience which is close to stock as poss
 
 ### Cons
 
+- As this requires Unlaunch, the console's NAND will be written, so there's a small chance to brick your console!
 - Restricted to only launching DS or DSi games. To launch games from prior consoles, you'll need to create forwarders for apps which emulate those consoles.
+- Creating forwarders for games can be time-consuming when compared to just adding them to the SD card.
 - Limited to 39 icons on-screen due to how the original DSi Menu works.
 - Menu UI is not customizeable.
 
