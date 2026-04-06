@@ -2,8 +2,8 @@
 
 You are about to install **TW**i**L**ight Menu++, which is an upgrade/replacement to the original Nintendo DSi Menu that allows running other homebrew applications, retail DS games, emulators for various older systems, and more.
 
-- If you are looking for a stock experience, want to try a different menu, and/or not satisfied with **TW**i**L**ight Menu++, you can try an [alternate menu](alternate-menus).
-- If you are only looking to run a DSi-Compatible flashcard that now shows the `An error has occurred.` screen, install [Unlaunch Standalone](installing-unlaunch-standalone).
+- If you are looking for a stock experience, want to try a different menu, and/or not satisfied with **TW**i**L**ight Menu++, you can try an [alternate menu](#alternate-menus).
+- If you are only looking to run a DSi-Compatible flashcard that now shows the `An error has occurred.` screen, choose [Unlaunch Standalone](#unlaunch-standalone).
 
 ### Installing **TW**i**L**ight Menu++
 
