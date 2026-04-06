@@ -1,6 +1,9 @@
-# Alternate Menus
+# Choosing a Menu
 
-If you are not satisfied with **TW**i**L**ight Menu++, alternate menus are listed here.
+There are three menus available in order to launch games. Choose whichever one that suits your needs.
+
+- If you are unsure (or cannot decide) which one to use, then choose [**TW**i**L**ight Menu++](#twilight-menu).
+- If you are only looking to run a DSi-Compatible Flashcart that now shows the "An Error Occurred" screen, choose [Unlaunch Standalone](#unlaunch-standalone).
 
 ## [hiyaCFW](installing-unlaunch-and-hiyacfw.html)
 
@@ -21,6 +24,24 @@ Install this if you're looking for an experience which is close to stock as poss
 - Limited to 39 icons on-screen due to how the original DSi Menu works.
 - Menu UI is not customizeable.
 
+## [**TW**i**L**ight Menu++](installing-twilight-menu.html)
+
+This is developed an upgrade/replacement to the original Nintendo DSi Menu that allows running other homebrew applications, retail DS games, emulators for various older systems, and more.
+
+### Pros
+
+- Includes near-faithful recreations of the DSi Menu, the 3DS HOME Menu, and some flashcard UIs.
+- Most UIs are customizeable by installing user-made custom themes.
+- Games from the DS, DSi, and GBA can be launched.
+- Games from older consoles prior to the GBA can be launched by installing an add-on.
+- Can be installed alongside hiyaCFW.
+
+### Cons
+
+- The DSi Menu UI has a few inaccuracies, such as the music being shortened and in low quality (can be worked around by installing an add-on), and different scrolling when dragging the scroll bar.
+- The Wood UI is missing some features, such as the start menu.
+- Can take a few seconds to switch between menus, such as the ROM selection menu, the DS Classic Menu, and/or Settings menu.
+
 ## [AKMenu-Next](installing-akmenu-next.html)
 
 This is an upgraded version of the original Wood/akmenu flashcard menu, made to be compatible with the DSi SD card.
@@ -30,6 +51,7 @@ This is an upgraded version of the original Wood/akmenu flashcard menu, made to 
 - The fastest and most lightweight menu available.
 - No features are missing from the menu (ex. start menu and graphical info/settings menu) when compared to the Wood UI from TWLMenu++.
 - Customizeable by installing user-made custom themes.
+- Can be installed alongside hiyaCFW.
 
 ### Cons
 
@@ -39,11 +61,11 @@ This is an upgraded version of the original Wood/akmenu flashcard menu, made to 
 
 ## [Unlaunch Standalone](installing-unlaunch-standalone.html)
 
-This does not install a custom menu and relies on the stock DSi Menu, but installing Unlaunch unlocks the DSi including allowing the use of previously blocked flashcards.
+This does not install a custom menu and relies on the stock DSi Menu, but installing Unlaunch unlocks the DSi including allowing the use of previously blocked flashcarts
 
 ### Pros
 
-- Allows for previously blocked DSi-Compatible flashcards to work (prevents `An error has occurred.` screen for applicable flashcards)
+- Allows for previously blocked DSi-Compatible flashcarts to work (prevents "An Error Occurred" screen for applicable flashcarts)
 - Allows for other menus to be installed in the future without requiring a prior exploit
 
 ### Cons

@@ -13,6 +13,7 @@
     "extras": "Extras",
     "other": "Other",
     "pages": {
+        "choosing-a-menu": "Choosing a Menu",
         "credits": "Credits",
         "dsiware-backups": "DSiWare Backups",
         "dumping-game-cards": "Dumping Game Cards",
@@ -20,7 +21,6 @@
         "faq": "FAQ",
         "file-extensions-windows": "File Extensions (Windows)",
         "get-started": "Get Started",
-        "installing-a-new-menu": "Installing a New Menu",
         "installing-unlaunch": "Installing Unlaunch",
         "launching-the-exploit": "Launching the Exploit",
         "launching-the-browser-exploit": "Launching the Exploit (stylehax)",

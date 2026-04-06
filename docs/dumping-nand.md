@@ -51,6 +51,6 @@ The SHA1 hash of the `nand.bin` will not match the hash stored in `nand.bin.sha1
 
 ::: tip
 
-Continue to [Installing a New Menu](installing-a-new-menu.html)
+Continue to [Choosing a Menu](choosing-a-menu.html)
 
 :::
