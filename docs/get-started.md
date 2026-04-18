@@ -20,6 +20,7 @@ Ensure your SD card is [formatted correctly](sd-card-setup.html).
 1. Insert your SD card into your PC
 1. Download the latest release of [dumpTool](https://dsi.cfw.guide/assets/files/dumptool/boot.nds) as `boot.nds`
 1. Copy the `boot.nds` file to the root of your SD card
+    - Make sure it is specifically named `boot.nds` instead of `boot (1).nds` or any other name
 
 ::: tip
 
